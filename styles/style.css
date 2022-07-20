@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto&display=swap");
+
+body {
+  margin: 0px;
+  background-color: rgb(182, 247, 247);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+main {
+  padding: 4vh 8.75%;
+}
+p {
+  text-align: justify;
+}
+/* Banner*/
+#title {
+  background: linear-gradient(to left, #018219, #0f0164);
+  height: 70vh;
+  border-radius: 1.5em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 3.5rem;
+  margin: 0px;
+  font-weight: 700;
+  line-height: 0.95em;
+}
+.titlePart {
+  width: 40%;
+  padding: 0 2%;
+}
+.titlePart img {
+  height: 100%;
+  width: 100%;
+}
+#part1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.buttons {
+  width: 187px;
+  height: 56px;
+  background-color: rgb(93, 88, 88);
+  border-radius: 5px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*2nd box*/
+section {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+.tabButtons {
+  width: 85%;
+  height: 21%;
+  border-radius: 10px;
+  background-color: rgb(122, 178, 9);
+  font-weight: 500;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: grab;
+}
+.tabButtons a {
+  text-decoration: none;
+  color: white;
+}
+#current {
+  background-color: rgb(93, 88, 88);
+  border: 5px solid white;
+}
+#tabManager {
+  height: 312px;
+  border: 1px solid red;
+  width: 22%;
+  background: linear-gradient(to top, #018219, #0f0164);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.allVideos {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1%;
+  row-gap: 10px;
+  cursor: pointer;
+}
+.perVideo {
+  height: 362px;
+  border: 1px solid red;
+  background: linear-gradient(to top, #018219, #0f0164);
+}
+.allVideos img {
+  height: 50%;
+  width: 100%;
+}
+
+/* internal decoration of each cell in grid */
+.videoText {
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+span {
+  border: 1px solid white;
+  width: fit-content;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+.alignIcons {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*bonus section*/
+#mobileOnly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: collapse;
+}
+/*Footer*/
+
+footer {
+  height: 40vh;
+  background-color: rgb(93, 88, 88);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#headingSmall {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
