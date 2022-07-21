@@ -76,6 +76,8 @@ section {
 .tabButtons a {
   text-decoration: none;
   color: white;
+  width: 100%;
+  text-align: center;
 }
 #current {
   background-color: rgb(93, 88, 88);
@@ -105,9 +107,20 @@ section {
   border: 1px solid red;
   background: linear-gradient(to top, #018219, #0f0164);
 }
+
 .allVideos img {
   height: 50%;
   width: 100%;
+}
+.perFixtures {
+  height: 30.2vh;
+  border: 1px solid red;
+  background: linear-gradient(to top, #018219, #0f0164);
+  padding: 5%;
+}
+.flags {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* internal decoration of each cell in grid */
@@ -192,6 +205,7 @@ a {
   }
   ul {
     flex-wrap: wrap;
+    padding: 0;
   }
   li {
     padding: 1vw;
@@ -201,6 +215,10 @@ a {
   }
   footer {
     height: 50vh;
+  }
+  .buttons {
+    font-size: 3vw;
+    width: 25vw;
   }
 }
 @media only screen and (max-width: 375px) {
