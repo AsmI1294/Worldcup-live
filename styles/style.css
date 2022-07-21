@@ -7,25 +7,26 @@ body {
   color: white;
 }
 main {
-  padding: 4vh 8.75%;
+  padding: 4vw 8.75%;
 }
 p {
   text-align: justify;
+  font-size: 1vw;
 }
 /* Banner*/
 #title {
   background: linear-gradient(to left, #018219, #0f0164);
-  height: 70vh;
-  border-radius: 1.5em;
+  height: 60vh;
+  border-radius: 1.5vw;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
 }
 h1 {
-  font-size: 3.5rem;
+  font-size: 4vw;
   margin: 0px;
   font-weight: 700;
-  line-height: 0.95em;
+  line-height: 3.5vw;
 }
 .titlePart {
   width: 40%;
@@ -41,14 +42,14 @@ h1 {
   justify-content: center;
 }
 .buttons {
-  width: 187px;
-  height: 56px;
+  width: 12.1vw;
+  height: 8.86vh;
   background-color: rgb(93, 88, 88);
-  border-radius: 5px;
+  border-radius: 0.33vw;
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -56,7 +57,7 @@ h1 {
 
 /*2nd box*/
 section {
-  margin-top: 5em;
+  margin-top: 10vh;
   display: flex;
   justify-content: space-between;
 }
@@ -66,7 +67,7 @@ section {
   border-radius: 10px;
   background-color: rgb(122, 178, 9);
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -81,7 +82,7 @@ section {
   border: 5px solid white;
 }
 #tabManager {
-  height: 312px;
+  height: 43.21vh;
   border: 1px solid red;
   width: 22%;
   background: linear-gradient(to top, #018219, #0f0164);
@@ -100,7 +101,7 @@ section {
   cursor: pointer;
 }
 .perVideo {
-  height: 362px;
+  height: 50.2vh;
   border: 1px solid red;
   background: linear-gradient(to top, #018219, #0f0164);
 }
@@ -111,7 +112,7 @@ section {
 
 /* internal decoration of each cell in grid */
 .videoText {
-  padding: 0.8em;
+  padding: 0.8vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -119,7 +120,7 @@ section {
 span {
   border: 1px solid white;
   width: fit-content;
-  padding: 0.3em;
+  padding: 0.3vw;
   border-radius: 5px;
 }
 .alignIcons {
@@ -132,6 +133,8 @@ span {
 /*bonus section*/
 #mobileOnly {
   display: flex;
+  margin-top: 5em;
+  margin-bottom: 3em;
   justify-content: center;
   align-items: center;
   visibility: collapse;
@@ -139,7 +142,7 @@ span {
 /*Footer*/
 
 footer {
-  height: 40vh;
+  height: 35vh;
   background-color: rgb(93, 88, 88);
   display: flex;
   flex-direction: column;
@@ -147,7 +150,7 @@ footer {
   align-items: center;
 }
 #headingSmall {
-  font-size: 1.8rem;
+  font-size: 4vw;
   font-weight: 600;
   margin: 0;
 }
@@ -160,4 +163,99 @@ ul {
 a {
   text-decoration: none;
   color: white;
+}
+@media only screen and (max-width: 834px) and (min-width: 376px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+  }
+  #tabManager {
+    width: 100%;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1vw;
+    background: rgb(182, 247, 247);
+    border: none;
+  }
+  .tabButtons {
+    width: 25%;
+    height: 5vh;
+  }
+  .allVideos {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #mobileOnly {
+    visibility: visible;
+  }
+  ul {
+    flex-wrap: wrap;
+  }
+  li {
+    padding: 1vw;
+  }
+  #title {
+    height: 50vh;
+  }
+  footer {
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #title {
+    height: fit-content;
+    flex-direction: column;
+    padding: 4vw;
+    padding-bottom: 0;
+  }
+  .buttons {
+    width: 100%;
+    font-size: 5vw;
+  }
+  h1 {
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+  p {
+    font-size: 3vw;
+  }
+  .titlePart {
+    width: 100%;
+  }
+  section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+  }
+  #tabManager {
+    width: 100%;
+    height: fit-content;
+    padding: 5vw;
+    background: rgb(182, 247, 247);
+    border: none;
+  }
+  .tabButtons {
+    width: 100%;
+    height: 6vh;
+    margin: 2vw;
+    font-size: 3vw;
+  }
+  .allVideos {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer {
+    height: 70vh;
+    margin-top: 2vh;
+  }
+  ul {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  #headingSmall {
+    font-size: 12vw;
+  }
 }
